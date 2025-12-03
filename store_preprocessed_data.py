@@ -58,7 +58,7 @@ if __name__=='__main__':
     xr, time_mask = preprocess(trange)
 
     # computing the FAC representation for the good FOV events
-    vperp, vpara, vdf, nanmask = compute_FAC_VDF.FAC_VDF_filtered(xr, count_threshold=2)
+    vperp, vpara, vdf, nanmask = compute_FAC_VDF.FAC_VDF_filtered(xr, count_threshold=3)
 
     # plotting the gyrovdf
     random_time_indices = np.random.randint(0, len(vperp), 25)
